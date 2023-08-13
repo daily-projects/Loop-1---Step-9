@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f6cd74;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  width: 100rem;
+  height: 55rem;
+}
+
+main .cards {
+  width: 40%;
+  background-color: #f3f3f2;
+  padding: 3rem 4rem;
+  height: inherit;
+  overflow: scroll;
+}
+
+main .cards header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.cards header p {
+  font-size: 3rem;
+}
+
+.cards .card {
+  border: 0.1rem solid #ccc;
+  background: white;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.cards .card:hover {
+  border-color: blue;
+  border-width: 0.2rem;
+}
+
+.cards .card.active {
+  border-color: blue;
+  border-width: 0.2rem;
+}
+
+.cards .card img {
+  height: 5rem;
+}
+
+.cards .card .account-number {
+  font-size: 2rem;
+  color: grey;
+}
+
+.cards .card .card-date {
+  font-size: 1.5rem;
+  color: grey;
+}
+main .content {
+  width: 60%;
+  background-color: #ffffff;
+  padding: 3rem 4rem;
+  height: inherit;
+  overflow: scroll;
+}
+
+main .content header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.content header p {
+  font-size: 3rem;
+}
+
+.content header p.current-balance {
+  font-weight: 700;
+}
+
+.content .transaction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.content .transaction .left {
+  display: flex;
+  align-items: center;
+}
+
+.content .transaction .left .transaction-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  margin-right: 3.5rem;
+}
+
+.content .transaction .left .transaction-data .item {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.content .transaction .left .transaction-data .item-status {
+  font-size: 1.5rem;
+  color: grey;
+}
+
+.content .transaction p.amount {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.content .transaction p.amount.debit {
+  color: #90a0ca;
+}
+
+.content .transaction p.amount.credit {
+  color: #8ccf62;
+}
